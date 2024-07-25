@@ -1,0 +1,24 @@
+mobile: ENC[AES256_GCM,data:ycBKKazvECs1zrR9Hxs=,iv:fTuUQqvRl6xIFZnEwSe+j4d9KGAlqUINdnnn1hID4os=,tag:+LsvfkpsorQgjpQsEfZ8dQ==,type:str]
+email: ENC[AES256_GCM,data:PrxYeJBHElUmUFIwYWDk+Mw=,iv:HD6JPYfferzIrVgakQqeSPT7Jr030AkH5l2n/y0u1f8=,tag:oU0gtM0iO9R4k2G5UJRs/Q==,type:str]
+sops:
+    kms: []
+    gcp_kms: []
+    azure_kv: []
+    hc_vault: []
+    age: []
+    lastmodified: "2024-07-25T21:27:14Z"
+    mac: ENC[AES256_GCM,data:ROnl/VyRA/iWZ1KoN1PikWn81iHrxySHeU+wCKLLbcqHhdldxRy/eYfYU6weXFGFsIXrFQ9xZimmNRIzj9wVUrNNjUEyvgovvV7PRi98/W98NdAeTC5iTZNN3HNTIcXQ9wDrBFqgnd4GIzwVsadDwJnTSNElZjIX+R0clkE8V8E=,iv:2IZnLlHOj9RLTGolHSIF+AmTyB4clTwhbw1r8BEN16Q=,tag:DpE8mlLvg3yiZt+5mdJ7qA==,type:str]
+    pgp:
+        - created_at: "2024-07-25T21:26:37Z"
+          enc: |-
+            -----BEGIN PGP MESSAGE-----
+
+            hF4DAAAAAAAAAAASAQdA6s4on+rVlM5zlK5+OC7I4w4SxsGnNKNMN3NsRSPGPTQw
+            NhmITLPqdQYXi51WJub7k8hI1xtVtd11HxVDvhQwVnhr/VhZ4nodNJn/3SqHbEZS
+            0l4BZAmNxlMoChXOQFWWsaHFFAfFFcWwO/udCJ+pnqZoIE6GumT0JeyR8y7mPoed
+            GAHUkUPa+pUQxyLuI7VYOiaF5oJL9uxGCB0kdLXBgF/olsNfHdGxt8n+R524HHbC
+            =vhPC
+            -----END PGP MESSAGE-----
+          fp: 6EEC861B7641B37D
+    unencrypted_suffix: _unencrypted
+    version: 3.8.1

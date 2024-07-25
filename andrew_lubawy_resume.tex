@@ -1,0 +1,152 @@
+\documentclass[11pt,a4paper]{moderncv}
+
+% moderncv themes
+\moderncvtheme[blue]{classic}
+
+% adjust the page margins
+\usepackage[utf8]{inputenc}
+
+\usepackage[scale=0.9]{geometry}
+\recomputelengths
+
+% personal data
+\firstname{Andrew}
+\familyname{Lubawy}
+\title{Senior Data Engineer}
+\address{San Diego, CA}
+\mobile{@mobile@}
+\email{@email@}
+\extrainfo{andrewlubawy.com}
+
+\begin{document}
+\maketitle
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{Nov 2022-- May 2024  }{Senior Data Engineer}{Cue Health}{San Diego, CA}{}{
+    \begin{itemize}
+        \item{Led the design and implementation of a custom data pipeline using Go to extract, store, and transform real-time manufacturing data, handling 15 million images/month on the order of petabytes per year in total.}
+        \begin{itemize}
+            \item{Developed a custom caching system across goroutines called through Cloud Run to ensure minimal query counts within BigQuery. Reduced image indexing costs by 94\% versus a non-cached system.}
+        \end{itemize}
+        \item{Led the data engineering team in implementing a system for collecting, processing, and presenting manufacturing data. This provided the first automated calculation of overall equipment effectiveness (OEE) at Cue. It improved new product development, field failure analysis, and manufacturing efficiency.}
+        \item{Took over as lead software engineer for the internal cartridge application built with TypeScript. Developed changes to implement reporting on multiplex tests for internal teams.}
+        \item{Designed an improved second iteration on the first data lake architecture for Cue that emphasizes self-service approaches and an analytics engineering focus using Dagster, dbt, BigQuery, and Looker.}
+    \end{itemize}
+}
+\cventry{Mar 2022-- Oct 2022  }{Data Engineer}{Cue Health}{San Diego, CA}{}{
+    \begin{itemize}
+        \item{Created a custom server-less data pipeline in Python for streaming billions of rows from noncompliant CSV files into a BigQuery table.}
+        \item{My first architecture presentation set the standard and was described by the chief architect as “the best and most comprehensive.”}
+        \item{Lead engineer on migrating the Cue marketing team from the Salesforce Datorama platform to an in-house data lake approach with BigQuery and Looker. Moved 7 marketing connectors over from Datorama to the new architecture.}
+        \item{Designed and built Cue's first data lake platform using services and tools such as Fivetran, BigQuery, dbt, and Looker.}
+        \begin{itemize}
+            \item{Took the data platform from 2 models to a large DAG of over 1,500 SQL transformation models.}
+            \item{Created a data lake that could account for GDPR, CCPA, HIPAA, and SOX requirements.}
+            \item{Designed the data lake to work across cloud regions (USA, Canada, and Singapore).}
+        \end{itemize}
+    \end{itemize}
+}
+\cventry{Jan 2019-- Mar 2022  }{Software Developer (Contractor)}{National Aeronautics and Space Administration (NASA)}{Hampton, VA}{}{
+    \begin{itemize}
+        \item{Support the Committee on Earth Observation Satellites (CEOS) Systems Engineering Office (SEO) under the direction of Dr. Brian Killough to further NASA's goals in the Earth observation community.}
+        \item{Lead developer on a project in partnership between CEOS and Google Earth Engine (GEE) team to promote the use of Earth Engine data with the Open Data Cube (ODC) project.}
+        \begin{itemize}
+            \item{Developed a novel interface to the ODC using GEE's REST API and Python libraries.}
+            \item{Created a sandbox environment using the ODC in Google Colab to facilitate collaboration and reduce costs by 95\% (https://github.com/ceos-seo/odc-colab).}
+        \end{itemize}
+        \item{Lead developer on building a training website using Django for NASA's Working Group for Capacity Building and Data Democracy team in CEOS (https://training.ceos.org).}
+        \item{Support the CEOS initiative and Earth observation community by creating various Jupyter notebooks to serve as examples and to explore new algorithms.}
+        \begin{itemize}
+            \item{Made a PoC for water detection using auto-threshold techniques on Sentinel-1 SAR data.}
+            \item{Implemented a notebook for detecting mangroves from Landsat imagery which helped countries in Africa understand their coastline inundation.}
+            \item{Used the random forest machine learning algorithm to create a notebook for land classification to help provide insights into UN Sustainable Development Goals (SDGs).}
+        \end{itemize}
+        \item{Lead developer on creating inventory web applications for CEOS using Django (https://ceos.org/data-tools/).}
+        \item{Coauthored multiple conference papers for CEOS, and presented a paper at IEEE's IGARSS conference in 2020 (https://ieeexplore.ieee.org/author/37088754294).}
+    \end{itemize}
+}
+\cventry{Dec 2018-- Mar 2022  }{Software Developer}{Analytical Mechanics Associates (AMA)}{Hampton, VA}{}{
+    \begin{itemize}
+        \item{Provided software development support such as data analysis, web development, and backend infrastructure to NASA under AMA's TEAMS 3 primary contract.}
+        \item{Full stack developer on NASA subcontract to develop a real-time telemetry web application for the Lunar VIPER mission. This was to provide support to public scientific endeavors and promote public engagement with the mission.}
+        \item{Built a React Native Android application to act as a UI to the ODC.}
+    \end{itemize}
+}
+\cventry{Dec 2018-- Jun 2019  }{Software Developer}{Insight Global}{Hampton, VA}{}{Contractor for AMA and subcontractor for NASA. Converted to full-time at AMA after 6-month contract ended.}
+\cventry{Jan 2018-- May 2018  }{Student Associate}{Miami University}{Oxford, OH}{}{Helped Dr. Donald Ucci develop a lab for an RF course at Miami University.}
+\cventry{Sep 2016-- Apr 2019  }{Software Developer}{Valbridge Property Advisors}{Las Vegas, NV}{}{Created and maintained a Python web application through Django to generate reports using ArcGIS from ESRI.}
+\subsection{Miscellaneous}
+\cventry{2021}{Scientific Committee Member}{IEEE International Geoscience and Remote Sensing Symposium (IGARSS)}{}{}{Reviewed research papers for approval to the IGARSS conference.}
+
+\section{Education}
+\cventry{2018}{B.S. Electrical Engineering}{Miami University}{Oxford, OH}{}{Concentration in Computer Systems}
+
+\section{Computer Languages}
+\cvlistdoubleitem{Python}{Go}
+\cvlistdoubleitem{SQL}{JavaScript/TypeScript}
+\cvlistdoubleitem{Bash}{C/C++}
+\cvlistdoubleitem{Rust}{Nix}
+
+\section{Engineering Skills}
+\sethintscolumntowidth{Electrical Engineering}
+\cvcomputer{Data Engineering}{
+    \begin{itemize}
+        \item{BigQuery}
+        \item{dbt}
+        \item{Fivetran}
+        \item{Dagster}
+    \end{itemize}
+}{Web Frameworks}{
+    \begin{itemize}
+        \item{Django}
+        \item{Flask}
+        \item{Vue.js}
+    \end{itemize}
+}
+\cvcomputer{Cloud Platforms}{
+    \begin{itemize}
+		\item{GCP}
+		\item{Firebase}
+		\item{AWS}
+        \item{DoiT}
+    \end{itemize}
+}{Infrastructure}{
+    \begin{itemize}
+		\item{Docker}
+		\item{Kubernetes}
+		\item{Terraform}
+    \end{itemize}
+}
+\cvcomputer{Data Science}{
+    \begin{itemize}
+		\item{Jupyter}
+        \item{NumPy/SciPy}
+        \item{Pandas}
+    \end{itemize}
+}{Electrical Engineering}{
+    \begin{itemize}
+		\item{MATLAB}
+		\item{Altium}
+		\item{SPICE}
+    \end{itemize}
+}
+\cvcomputer{Software Engineering}{
+    \begin{itemize}
+		\item{Git}
+        \item{GNU tools}
+		\item{Linux}
+    \end{itemize}
+}{Mobile Development}{
+    \begin{itemize}
+        \item{React Native}
+    \end{itemize}
+}
+
+\emptysection{}\closesection
+\vfill
+\begin{center}
+    \textit{\small https://github.com/dlubawy | https://github.com/dlubawy-ama | https://www.linkedin.com/in/andrewlubawy}
+\end{center}
+
+\end{document}
