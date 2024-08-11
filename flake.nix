@@ -35,6 +35,8 @@
           default = pkgs.mkShell {
             packages = with pkgs; [
               gnused
+              latex2html
+              pandoc
               sops
               tex
             ];
