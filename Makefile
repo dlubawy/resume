@@ -7,7 +7,7 @@ doc: build
 	pandoc -f html -t gfm-raw_html -o ./README.md build/html/index.html
 
 build/html/index.html:
-	@mkdir -p ./buld
+	@mkdir -p ./build
 	latex2html --nonavigation --noinfo --split=0 --dir=./build/html --mkdir ./andrew_lubawy_resume.tex
 	@sed -z -i 's/Electrical Engineering\n\(Data Engineering\)/\1/g' ./build/html/index.html
 	@sed -i 's/\(&ndash;\) /\1/g' ./build/html/index.html

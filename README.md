@@ -9,6 +9,30 @@ San Diego, CA
 
 ## Vocational
 
+Sep 2024–Present  
+Senior Data Engineer  
+ResMed  
+San Diego, CA  
+
+- Lead engineer on migrating data platform's orchestration tool from
+  open source Dagster to Dagster+.
+- Led a proof of concept evaluation of Dagster+ using the hybrid EKS
+  architecture that saw a complete deployment and assessment of the
+  service in a few weeks of development time.
+  - Discovered approaches that would allow open source Dagster to have
+    similar capabilities as Dagster+ such as adding RBAC and branch
+    deployments to the open source version.
+- Lead engineer managing the data platform with a stack of Dagster, dbt,
+  and Snowflake.
+  - Developed custom Dagster resources and utilities to help data
+    engineers in creating new data pipelines.
+  - Developed dbt macros for custom materialization patterns such as
+    allowing Snowflake role assignments to columns.
+  - Managed infrastructure deployments to AWS ECS and S3 using
+    Terraform.
+  - Developed GitHub Actions workflows for automated CI/CD of the entire
+    platform and new pipeline contributions.
+
 Nov 2022–May 2024  
 Senior Data Engineer  
 Cue Health  
@@ -129,6 +153,49 @@ Las Vegas, NV
 - Created and maintained a Python web application through Django to
   generate reports using ArcGIS from ESRI.
 
+## Open Source Projects
+
+May 2024–Present  
+nix-configs Nix  
+
+- Created a modular Nix configuration for personal systems using NixOS,
+  nix-darwin, and home-manager.
+- Built a Wi-Fi router with NixOS and a custom Linux kernel
+  configuration using a Banana Pi BPI-R3 board.
+  - Implemented segmented VLANs to create network separation.
+  - Discovered and patched a bug with PMKSA caching in hostapd which
+    prevented dynamic VLAN assignment when using WPA3 authentication.
+  - Patched the Linux kernel drivers to add support for a 2.5GBase-T SFP
+    to RJ45 module.
+  - Created many Grafana dashboards to provide observability over the
+    network.
+- Provided code to the nix-darwin project which allowed moving PAM
+  configurations to a sudo_local file to ensure configuration
+  persistence between macOS updates.
+- Implemented a GitHub Actions workflow which provides CI/CD coverage
+  that allows for weekly automated updates of packages.
+
+Jul 2024–Aug 2025  
+agenix  
+Nix  
+
+- Added armored PEM encryption output.
+
+Aug 2024–Present  
+age-plugin-yubikey Rust  
+
+- Added x25519 encryption support to enable native age encryption when
+  using a YubiKey.
+- Created a Python script to convert native age identities to a PEM with
+  a self-signed X.509 certificate to be uploaded to a YubiKey.
+
+Jul 2024–Present  
+yubikey.rs  
+Rust  
+
+- Added Curve25519 support to the library for YubiKeys with newer
+  firmware.
+
 ## Miscellaneous
 
 2021  
@@ -161,7 +228,9 @@ Nix
 Data Engineering  
 
 - BigQuery
+- Snowflake
 - dbt
+- dlt
 - Fivetran
 - Dagster
 

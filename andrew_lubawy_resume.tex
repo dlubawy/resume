@@ -24,6 +24,28 @@
 \section{Experience}
 \subsection{Vocational}
 \cventry
+{Sep 2024-- Present  }
+{Senior Data Engineer}
+{ResMed}
+{San Diego, CA}
+{}
+{
+    \begin{itemize}
+        \item{Lead engineer on migrating data platform's orchestration tool from open source Dagster to Dagster+.}
+        \item{Led a proof of concept evaluation of Dagster+ using the hybrid EKS architecture that saw a complete deployment and assessment of the service in a few weeks of development time.}
+        \begin{itemize}
+            \item{Discovered approaches that would allow open source Dagster to have similar capabilities as Dagster+ such as adding RBAC and branch deployments to the open source version.}
+        \end{itemize}
+        \item{Lead engineer managing the data platform with a stack of Dagster, dbt, and Snowflake.}
+        \begin{itemize}
+            \item{Developed custom Dagster resources and utilities to help data engineers in creating new data pipelines.}
+            \item{Developed dbt macros for custom materialization patterns such as allowing Snowflake role assignments to columns.}
+            \item{Managed infrastructure deployments to AWS ECS and S3 using Terraform.}
+            \item{Developed GitHub Actions workflows for automated CI/CD of the entire platform and new pipeline contributions.}
+        \end{itemize}
+    \end{itemize}
+}
+\cventry
 {Nov 2022-- May 2024  }
 {Senior Data Engineer}
 {Cue Health}
@@ -50,7 +72,7 @@
     \begin{itemize}
         \item{Created a custom server-less data pipeline in Python for streaming billions of rows from noncompliant CSV files into a BigQuery table.}
         \item{My first architecture presentation set the standard and was described by the chief architect as “the best and most comprehensive.”}
-        \item{Lead engineer on migrating the Cue marketing team from the Salesforce Datorama platform to an in-house data lake approach with BigQuery and Looker. Moved 7 marketing connectors over from Datorama to the new architecture.}
+        \item{Lead engineer migrating the Cue marketing team from the Salesforce Datorama platform to an in-house data lake approach with BigQuery and Looker. Moved 7 marketing connectors over from Datorama to the new architecture.}
         \item{Designed and built Cue's first data lake platform using services and tools such as Fivetran, BigQuery, dbt, and Looker.}
         \begin{itemize}
             \item{Took the data platform from 2 models to a large DAG of over 1,500 SQL transformation models.}
@@ -130,6 +152,62 @@
         \item{Created and maintained a Python web application through Django to generate reports using ArcGIS from ESRI.}
     \end{itemize}
 }
+\subsection{Open Source Projects}
+\cventry
+{May 2024-- Present  }
+{nix-configs}
+{}
+{Nix}
+{}
+{
+    \begin{itemize}
+        \item{Created a modular Nix configuration for personal systems using NixOS, nix-darwin, and home-manager.}
+        \item{Built a Wi-Fi router with NixOS and a custom Linux kernel configuration using a Banana Pi BPI-R3 board.}
+        \begin{itemize}
+            \item{Implemented segmented VLANs to create network separation.}
+            \item{Discovered and patched a bug with PMKSA caching in hostapd which prevented dynamic VLAN assignment when using WPA3 authentication.}
+            \item{Patched the Linux kernel drivers to add support for a 2.5GBase-T SFP to RJ45 module.}
+            \item{Created many Grafana dashboards to provide observability over the network.}
+        \end{itemize}
+        \item{Provided code to the nix-darwin project which allowed moving PAM configurations to a sudo\_local file to ensure configuration persistence between macOS updates.}
+        \item{Implemented a GitHub Actions workflow which provides CI/CD coverage that allows for weekly automated updates of packages.}
+    \end{itemize}
+}
+\cventry
+{Jul 2024-- Aug 2025  }
+{agenix}
+{}
+{Nix}
+{}
+{
+    \begin{itemize}
+        \item{Added armored PEM encryption output.}
+    \end{itemize}
+}
+\cventry
+{Aug 2024-- Present  }
+{age-plugin-yubikey}
+{}
+{Rust}
+{}
+{
+    \begin{itemize}
+        \item{Added x25519 encryption support to enable native age encryption when using a YubiKey.}
+        \item{Created a Python script to convert native age identities to a PEM with a self-signed X.509 certificate to be uploaded to a YubiKey.}
+    \end{itemize}
+}
+\cventry
+{Jul 2024-- Present  }
+{yubikey.rs}
+{}
+{Rust}
+{}
+{
+    \begin{itemize}
+        \item{Added Curve25519 support to the library for YubiKeys with newer firmware.}
+    \end{itemize}
+}
+
 \subsection{Miscellaneous}
 \cventry
 {2021}
@@ -171,7 +249,9 @@
 \cvcomputer{Data Engineering}{
     \begin{itemize}
         \item{BigQuery}
+        \item{Snowflake}
         \item{dbt}
+        \item{dlt}
         \item{Fivetran}
         \item{Dagster}
     \end{itemize}
