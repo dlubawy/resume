@@ -66,7 +66,7 @@ San Diego, CA
   billions of rows from noncompliant CSV files into a BigQuery table.
 - My first architecture presentation set the standard and was described
   by the chief architect as “the best and most comprehensive.”
-- Lead engineer on migrating the Cue marketing team from the Salesforce
+- Lead engineer migrating the Cue marketing team from the Salesforce
   Datorama platform to an in-house data lake approach with BigQuery and
   Looker. Moved 7 marketing connectors over from Datorama to the new
   architecture.
@@ -153,7 +153,7 @@ Las Vegas, NV
 - Created and maintained a Python web application through Django to
   generate reports using ArcGIS from ESRI.
 
-## Open Source Projects
+## Open Source Projects and Contributions
 
 May 2024–Present  
 nix-configs Nix  
