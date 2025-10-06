@@ -14,7 +14,7 @@ Senior Data Engineer
 ResMed  
 San Diego, CA  
 
-- Lead engineer on migrating data platform's orchestration tool from
+- Lead engineer on migrating the data platform's orchestration tool from
   open source Dagster to Dagster+.
 - Led a proof of concept evaluation of Dagster+ using the hybrid EKS
   architecture that saw a complete deployment and assessment of the
@@ -22,10 +22,11 @@ San Diego, CA
   - Discovered approaches that would allow open source Dagster to have
     similar capabilities as Dagster+ such as adding RBAC and branch
     deployments to the open source version.
-- Lead engineer managing the data platform with a stack of Dagster, dbt,
-  and Snowflake.
+- Lead engineer managing ResMed's modernized data platform with a main
+  stack of Dagster, dbt, and Snowflake.
   - Developed custom Dagster resources and utilities to help data
-    engineers in creating new data pipelines.
+    engineers create reusable deployment patterns and cut significant
+    costs compared to legacy systems.
   - Developed dbt macros for custom materialization patterns such as
     allowing Snowflake role assignments to columns.
   - Managed infrastructure deployments to AWS ECS and S3 using
@@ -70,14 +71,11 @@ San Diego, CA
   Datorama platform to an in-house data lake approach with BigQuery and
   Looker. Moved 7 marketing connectors over from Datorama to the new
   architecture.
-- Designed and built Cue's first data lake platform using services and
-  tools such as Fivetran, BigQuery, dbt, and Looker.
-  - Took the data platform from 2 models to a large DAG of over 1,500
-    SQL transformation models.
-  - Created a data lake that could account for GDPR, CCPA, HIPAA, and
-    SOX requirements.
-  - Designed the data lake to work across cloud regions (USA, Canada,
-    and Singapore).
+- Designed and built Cue’s first data lake platform using Fivetran,
+  BigQuery, dbt, and Looker, expanding it from 2 to over 1,500 SQL
+  models, ensuring compliance with GDPR, CCPA, HIPAA, and SOX, and
+  enabling multi-region deployment across the USA, Canada, and
+  Singapore.
 
 Jan 2019–Mar 2022  
 Software Developer (Contractor)  
@@ -87,28 +85,19 @@ Hampton, VA
 - Support the Committee on Earth Observation Satellites (CEOS) Systems
   Engineering Office (SEO) under the direction of Dr. Brian Killough to
   further NASA's goals in the Earth observation community.
-- Lead developer on a project in partnership between CEOS and Google
-  Earth Engine (GEE) team to promote the use of Earth Engine data with
-  the Open Data Cube (ODC) project.
-  - Developed a novel interface to the ODC using GEE's REST API and
-    Python libraries.
-  - Created a sandbox environment using the ODC in Google Colab to
-    facilitate collaboration and reduce costs by 95%
-    (https://github.com/ceos-seo/odc-colab).
+- Led a joint CEOS–Google Earth Engine project to integrate Earth Engine
+  data with the Open Data Cube, developing a novel interface using GEE’s
+  REST API and Python, and creating a Google Colab sandbox that reduced
+  collaboration costs by 95%.
 - Lead developer on building a training website using Django for NASA's
   Working Group for Capacity Building and Data Democracy team in CEOS
   (https://training.ceos.org).
-- Support the CEOS initiative and Earth observation community by
-  creating various Jupyter notebooks to serve as examples and to explore
-  new algorithms.
-  - Made a PoC for water detection using auto-threshold techniques on
-    Sentinel-1 SAR data.
-  - Implemented a notebook for detecting mangroves from Landsat imagery
-    which helped countries in Africa understand their coastline
-    inundation.
-  - Used the random forest machine learning algorithm to create a
-    notebook for land classification to help provide insights into UN
-    Sustainable Development Goals (SDGs).
+- Supported the CEOS initiative and Earth observation community by
+  creating Jupyter notebooks demonstrating new algorithms, including
+  water detection from Sentinel-1 SAR data, mangrove detection from
+  Landsat imagery for coastal analysis in Africa, and land
+  classification using random forest models to support UN Sustainable
+  Development Goals.
 - Lead developer on creating inventory web applications for CEOS using
   Django (https://ceos.org/data-tools/).
 - Coauthored multiple conference papers for CEOS, and presented a paper
@@ -153,7 +142,7 @@ Las Vegas, NV
 - Created and maintained a Python web application through Django to
   generate reports using ArcGIS from ESRI.
 
-## Open Source Projects and Contributions
+## Selected Open Source Projects and Contributions
 
 May 2024–Present  
 nix-configs Nix  
@@ -162,32 +151,18 @@ nix-configs Nix
   nix-darwin, and home-manager.
 - Built a Wi-Fi router with NixOS and a custom Linux kernel
   configuration using a Banana Pi BPI-R3 board.
-  - Implemented segmented VLANs to create network separation.
   - Discovered and patched a bug with PMKSA caching in hostapd which
     prevented dynamic VLAN assignment when using WPA3 authentication.
   - Patched the Linux kernel drivers to add support for a 2.5GBase-T SFP
     to RJ45 module.
-  - Created many Grafana dashboards to provide observability over the
-    network.
-- Provided code to the nix-darwin project which allowed moving PAM
-  configurations to a sudo_local file to ensure configuration
-  persistence between macOS updates.
 - Implemented a GitHub Actions workflow which provides CI/CD coverage
   that allows for weekly automated updates of packages.
-
-Jul 2024–Aug 2025  
-agenix  
-Nix  
-
-- Added armored PEM encryption output.
 
 Aug 2024–Present  
 age-plugin-yubikey Rust  
 
 - Added x25519 encryption support to enable native age encryption when
   using a YubiKey.
-- Created a Python script to convert native age identities to a PEM with
-  a self-signed X.509 certificate to be uploaded to a YubiKey.
 
 Jul 2024–Present  
 yubikey.rs  
@@ -274,9 +249,6 @@ Software Engineering
 Mobile Development
 
 - React Native
-
-https://github.com/dlubawy \| https://github.com/dlubawy-ama \|
-https://www.linkedin.com/in/andrewlubawy
 
   
 

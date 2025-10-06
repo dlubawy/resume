@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[10pt,a4paper]{moderncv}
 
 % moderncv themes
 \moderncvtheme[blue]{classic}
@@ -16,7 +16,9 @@
 \address{San Diego, CA}
 \mobile{@mobile@}
 \email{@email@}
-\extrainfo{andrewlubawy.com}
+\homepage{andrewlubawy.com}
+\social[github]{dlubawy}
+\social[linkedin]{andrewlubawy}
 
 \begin{document}
 \maketitle
@@ -31,14 +33,14 @@
 {}
 {
     \begin{itemize}
-        \item{Lead engineer on migrating data platform's orchestration tool from open source Dagster to Dagster+.}
+        \item{Lead engineer on migrating the data platform's orchestration tool from open source Dagster to Dagster+.}
         \item{Led a proof of concept evaluation of Dagster+ using the hybrid EKS architecture that saw a complete deployment and assessment of the service in a few weeks of development time.}
         \begin{itemize}
             \item{Discovered approaches that would allow open source Dagster to have similar capabilities as Dagster+ such as adding RBAC and branch deployments to the open source version.}
         \end{itemize}
-        \item{Lead engineer managing the data platform with a stack of Dagster, dbt, and Snowflake.}
+        \item{Lead engineer managing ResMed's modernized data platform with a main stack of Dagster, dbt, and Snowflake.}
         \begin{itemize}
-            \item{Developed custom Dagster resources and utilities to help data engineers in creating new data pipelines.}
+            \item{Developed custom Dagster resources and utilities to help data engineers create reusable deployment patterns and cut significant costs compared to legacy systems.}
             \item{Developed dbt macros for custom materialization patterns such as allowing Snowflake role assignments to columns.}
             \item{Managed infrastructure deployments to AWS ECS and S3 using Terraform.}
             \item{Developed GitHub Actions workflows for automated CI/CD of the entire platform and new pipeline contributions.}
@@ -73,12 +75,7 @@
         \item{Created a custom server-less data pipeline in Python for streaming billions of rows from noncompliant CSV files into a BigQuery table.}
         \item{My first architecture presentation set the standard and was described by the chief architect as “the best and most comprehensive.”}
         \item{Lead engineer migrating the Cue marketing team from the Salesforce Datorama platform to an in-house data lake approach with BigQuery and Looker. Moved 7 marketing connectors over from Datorama to the new architecture.}
-        \item{Designed and built Cue's first data lake platform using services and tools such as Fivetran, BigQuery, dbt, and Looker.}
-        \begin{itemize}
-            \item{Took the data platform from 2 models to a large DAG of over 1,500 SQL transformation models.}
-            \item{Created a data lake that could account for GDPR, CCPA, HIPAA, and SOX requirements.}
-            \item{Designed the data lake to work across cloud regions (USA, Canada, and Singapore).}
-        \end{itemize}
+        \item{Designed and built Cue’s first data lake platform using Fivetran, BigQuery, dbt, and Looker, expanding it from 2 to over 1,500 SQL models, ensuring compliance with GDPR, CCPA, HIPAA, and SOX, and enabling multi-region deployment across the USA, Canada, and Singapore.}
     \end{itemize}
 }
 \cventry
@@ -90,18 +87,9 @@
 {
     \begin{itemize}
         \item{Support the Committee on Earth Observation Satellites (CEOS) Systems Engineering Office (SEO) under the direction of Dr. Brian Killough to further NASA's goals in the Earth observation community.}
-        \item{Lead developer on a project in partnership between CEOS and Google Earth Engine (GEE) team to promote the use of Earth Engine data with the Open Data Cube (ODC) project.}
-        \begin{itemize}
-            \item{Developed a novel interface to the ODC using GEE's REST API and Python libraries.}
-            \item{Created a sandbox environment using the ODC in Google Colab to facilitate collaboration and reduce costs by 95\% (https://github.com/ceos-seo/odc-colab).}
-        \end{itemize}
+        \item{Led a joint CEOS–Google Earth Engine project to integrate Earth Engine data with the Open Data Cube, developing a novel interface using GEE’s REST API and Python, and creating a Google Colab sandbox that reduced collaboration costs by 95\%.}
         \item{Lead developer on building a training website using Django for NASA's Working Group for Capacity Building and Data Democracy team in CEOS (https://training.ceos.org).}
-        \item{Support the CEOS initiative and Earth observation community by creating various Jupyter notebooks to serve as examples and to explore new algorithms.}
-        \begin{itemize}
-            \item{Made a PoC for water detection using auto-threshold techniques on Sentinel-1 SAR data.}
-            \item{Implemented a notebook for detecting mangroves from Landsat imagery which helped countries in Africa understand their coastline inundation.}
-            \item{Used the random forest machine learning algorithm to create a notebook for land classification to help provide insights into UN Sustainable Development Goals (SDGs).}
-        \end{itemize}
+        \item{Supported the CEOS initiative and Earth observation community by creating Jupyter notebooks demonstrating new algorithms, including water detection from Sentinel-1 SAR data, mangrove detection from Landsat imagery for coastal analysis in Africa, and land classification using random forest models to support UN Sustainable Development Goals.}
         \item{Lead developer on creating inventory web applications for CEOS using Django (https://ceos.org/data-tools/).}
         \item{Coauthored multiple conference papers for CEOS, and presented a paper at IEEE's IGARSS conference in 2020 (https://ieeexplore.ieee.org/author/37088754294).}
     \end{itemize}
@@ -152,7 +140,7 @@
         \item{Created and maintained a Python web application through Django to generate reports using ArcGIS from ESRI.}
     \end{itemize}
 }
-\subsection{Open Source Projects and Contributions}
+\subsection{Selected Open Source Projects and Contributions}
 \cventry
 {May 2024-- Present  }
 {nix-configs}
@@ -164,24 +152,10 @@
         \item{Created a modular Nix configuration for personal systems using NixOS, nix-darwin, and home-manager.}
         \item{Built a Wi-Fi router with NixOS and a custom Linux kernel configuration using a Banana Pi BPI-R3 board.}
         \begin{itemize}
-            \item{Implemented segmented VLANs to create network separation.}
             \item{Discovered and patched a bug with PMKSA caching in hostapd which prevented dynamic VLAN assignment when using WPA3 authentication.}
             \item{Patched the Linux kernel drivers to add support for a 2.5GBase-T SFP to RJ45 module.}
-            \item{Created many Grafana dashboards to provide observability over the network.}
         \end{itemize}
-        \item{Provided code to the nix-darwin project which allowed moving PAM configurations to a sudo\_local file to ensure configuration persistence between macOS updates.}
         \item{Implemented a GitHub Actions workflow which provides CI/CD coverage that allows for weekly automated updates of packages.}
-    \end{itemize}
-}
-\cventry
-{Jul 2024-- Aug 2025  }
-{agenix}
-{}
-{Nix}
-{}
-{
-    \begin{itemize}
-        \item{Added armored PEM encryption output.}
     \end{itemize}
 }
 \cventry
@@ -193,7 +167,6 @@
 {
     \begin{itemize}
         \item{Added x25519 encryption support to enable native age encryption when using a YubiKey.}
-        \item{Created a Python script to convert native age identities to a PEM with a self-signed X.509 certificate to be uploaded to a YubiKey.}
     \end{itemize}
 }
 \cventry
@@ -300,11 +273,4 @@
         \item{React Native}
     \end{itemize}
 }
-
-\emptysection{}\closesection
-\vfill
-\begin{center}
-    \textit{\small https://github.com/dlubawy | https://github.com/dlubawy-ama | https://www.linkedin.com/in/andrewlubawy}
-\end{center}
-
 \end{document}
