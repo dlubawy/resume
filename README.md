@@ -14,8 +14,16 @@ Senior Data Engineer
 ResMed  
 San Diego, CA  
 
+- Led an initiative with the help of AI coding agents to create an
+  in-house Dagster web server fork that replicated paid Dagster+
+  features.
+  - Migrated the company onto the custom Dagster fork which saved over
+    \$130k per year in growing contract costs.
 - Lead engineer on migrating the data platform's orchestration tool from
   open source Dagster to Dagster+.
+  - Managed four Dagster+ hybrid deployments consisting of eighteen code
+    locations in separated compute environments with eighteen individual
+    Dagster+ agent deployments on Kubernetes.
 - Led a proof of concept evaluation of Dagster+ using the hybrid EKS
   architecture that saw a complete deployment and assessment of the
   service in a few weeks of development time.
@@ -91,7 +99,7 @@ Hampton, VA
   collaboration costs by 95%.
 - Lead developer on building a training website using Django for NASA's
   Working Group for Capacity Building and Data Democracy team in CEOS
-  (https://training.ceos.org).
+  ([reference link](https://training.ceos.org)).
 - Supported the CEOS initiative and Earth observation community by
   creating Jupyter notebooks demonstrating new algorithms, including
   water detection from Sentinel-1 SAR data, mangrove detection from
@@ -99,10 +107,10 @@ Hampton, VA
   classification using random forest models to support UN Sustainable
   Development Goals.
 - Lead developer on creating inventory web applications for CEOS using
-  Django (https://ceos.org/data-tools/).
+  Django ([reference link](https://ceos.org/data-tools)).
 - Coauthored multiple conference papers for CEOS, and presented a paper
-  at IEEE's IGARSS conference in 2020
-  (https://ieeexplore.ieee.org/author/37088754294).
+  at IEEE's IGARSS conference in 2020 ([reference
+  link](https://ieeexplore.ieee.org/author/37088754294)).
 
 Dec 2018–Mar 2022  
 Software Developer  
@@ -116,7 +124,6 @@ Hampton, VA
   telemetry web application for the Lunar VIPER mission. This was to
   provide support to public scientific endeavors and promote public
   engagement with the mission.
-- Built a React Native Android application to act as a UI to the ODC.
 
 Dec 2018–Jun 2019  
 Software Developer  
@@ -145,7 +152,7 @@ Las Vegas, NV
 ## Selected Open Source Projects and Contributions
 
 May 2024–Present  
-nix-configs Nix  
+[dlubawy/nix-configs](https://github.com/dlubawy/nix-configs) Nix  
 
 - Created a modular Nix configuration for personal systems using NixOS,
   nix-darwin, and home-manager.
@@ -156,16 +163,20 @@ nix-configs Nix
   - Patched the Linux kernel drivers to add support for a 2.5GBase-T SFP
     to RJ45 module.
 - Implemented a GitHub Actions workflow which provides CI/CD coverage
-  that allows for weekly automated updates of packages.
+  that allows for weekly automated updates of the OS and software
+  packages.
 
 Aug 2024–Present  
-age-plugin-yubikey Rust  
+[dlubawy/age-plugin-yubikey](https://github.com/dlubawy/age-plugin-yubikey)
+Rust  
 
+- Added MlKemX25519 encryption support to enable native tagged
+  post-quantum encryption when using a YubiKey.
 - Added x25519 encryption support to enable native age encryption when
   using a YubiKey.
 
-Jul 2024–Present  
-yubikey.rs  
+Jul 2024–Apr 2026  
+[iqlusioninc/yubikey.rs](https://gihtub.com/iqlusioninc/yubikey.rs)
 Rust  
 
 - Added Curve25519 support to the library for YubiKeys with newer
@@ -245,6 +256,7 @@ Software Engineering
 - Git
 - GNU tools
 - Linux
+- AI coding harnesses
 
 Mobile Development
 
