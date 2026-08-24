@@ -3,6 +3,9 @@
 % moderncv themes
 \moderncvtheme[blue]{classic}
 
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+
 % adjust the page margins
 \usepackage[utf8]{inputenc}
 
@@ -33,7 +36,14 @@
 {}
 {
     \begin{itemize}
+        \item{Led an initiative with the help of AI coding agents to create an in-house Dagster web server fork that replicated paid Dagster+ features.}
+        \begin{itemize}
+\item{Migrated the company onto the custom Dagster fork which saved over \$130k per year in growing contract costs.}
+        \end{itemize}
         \item{Lead engineer on migrating the data platform's orchestration tool from open source Dagster to Dagster+.}
+        \begin{itemize}
+            \item{Managed four Dagster+ hybrid deployments consisting of eighteen code locations in separated compute environments with eighteen individual Dagster+ agent deployments on Kubernetes.}
+        \end{itemize}
         \item{Led a proof of concept evaluation of Dagster+ using the hybrid EKS architecture that saw a complete deployment and assessment of the service in a few weeks of development time.}
         \begin{itemize}
             \item{Discovered approaches that would allow open source Dagster to have similar capabilities as Dagster+ such as adding RBAC and branch deployments to the open source version.}
@@ -104,7 +114,6 @@
     \begin{itemize}
         \item{Provided software development support such as data analysis, web development, and backend infrastructure to NASA under AMA's TEAMS 3 primary contract.}
         \item{Full stack developer on NASA subcontract to develop a real-time telemetry web application for the Lunar VIPER mission. This was to provide support to public scientific endeavors and promote public engagement with the mission.}
-        \item{Built a React Native Android application to act as a UI to the ODC.}
     \end{itemize}
 }
 \cventry
@@ -143,7 +152,7 @@
 \subsection{Selected Open Source Projects and Contributions}
 \cventry
 {May 2024-- Present  }
-{nix-configs}
+{github:dlubawy/nix-configs}
 {}
 {Nix}
 {}
@@ -155,23 +164,24 @@
             \item{Discovered and patched a bug with PMKSA caching in hostapd which prevented dynamic VLAN assignment when using WPA3 authentication.}
             \item{Patched the Linux kernel drivers to add support for a 2.5GBase-T SFP to RJ45 module.}
         \end{itemize}
-        \item{Implemented a GitHub Actions workflow which provides CI/CD coverage that allows for weekly automated updates of packages.}
+        \item{Implemented a GitHub Actions workflow which provides CI/CD coverage that allows for weekly automated updates of the OS and software packages.}
     \end{itemize}
 }
 \cventry
 {Aug 2024-- Present  }
-{age-plugin-yubikey}
+{github:dlubawy/age-plugin-yubikey}
 {}
 {Rust}
 {}
 {
     \begin{itemize}
+        \item{Added MlKemX25519 encryption support to enable native tagged post-quantum encryption when using a YubiKey.}
         \item{Added x25519 encryption support to enable native age encryption when using a YubiKey.}
     \end{itemize}
 }
 \cventry
-{Jul 2024-- Present  }
-{yubikey.rs}
+{Jul 2024-- Apr 2026  }
+{github:iqlusioninc/yubikey.rs}
 {}
 {Rust}
 {}
@@ -267,6 +277,7 @@
 		\item{Git}
         \item{GNU tools}
 		\item{Linux}
+        \item{AI coding harnesses}
     \end{itemize}
 }{Mobile Development}{
     \begin{itemize}
