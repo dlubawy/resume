@@ -12,6 +12,7 @@ build/html/index.html:
 	@sed -z -i 's/Electrical Engineering\n\(Data Engineering\)/\1/g' ./build/html/index.html
 	@sed -i 's/\(&ndash;\) /\1/g' ./build/html/index.html
 	@sed -i 's#^\(\w[a-zA-Z0-9\-_;., &/+()]\+\)$$#\1<br>#g' ./build/html/index.html
+	@sed -i 's#\[\([a-zA-Z0-9_./+ -]\+\)\]\([a-zA-Z0-9_./+:-]\+\)#<A href="\2">\1</A>#g' ./build/html/index.html
 	@sed -z -i 's#<A.*@email@</A>#<A href="https://github.com/dlubawy">@dlubawy</A>#g' ./build/html/index.html
 
 build/andrew_lubawy_resume.pdf: build/andrew_lubawy_resume.tex
